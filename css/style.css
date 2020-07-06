@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  display: grid;
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery {
+  height: 80vh;
+  width: 80vw;
+  grid-template-rows: 20% 80%;
+  margin: auto;
+}
+
+.title {
+  padding-left: 5%;
+}
+
+.slide {
+  margin: auto;
+  height: 600px;
+  width: 600px;
+}
+
+.fade {
+  display: none;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
