@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+                              /* Page Layout */
+
 .page {
   display: grid;
   height: 100vh;
@@ -26,12 +28,41 @@
   width: 600px;
 }
 
-.fade {
-  display: none;
-}
-
 img {
   height: 100%;
   width: auto;
   object-fit: cover;
+}
+
+                            /* Fade-in and Fade-out effects */
+.fade {
+animation: fadeInOut ease 2s;
+-webkit-animation: fadeInOut ease 2s;
+-moz-animation: fadeInOut ease 2s;
+-o-animation: fadeInOut ease 2s;
+-ms-animation: fadeInOut ease 2s;
+}
+@keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-moz-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-webkit-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-o-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-ms-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
 }
