@@ -9,13 +9,13 @@
   height: 100vh;
   max-width: 900px;
   margin: auto;
+  background-color: yellow;
 }
 
 .gallery {
-  height: 80vh;
-  width: 80vw;
   grid-template-rows: 20% 80%;
   margin: auto;
+  background-color: pink;
 }
 
 .title {
