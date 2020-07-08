@@ -11,13 +11,12 @@ function slideShow() {
     slides[i].style.display = "none";
   }
 
-  //show
+  //start the slideshow
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "grid";
-  setTimeout(slideShow, 2000); // Change image every 2 seconds
+  setTimeout(slideShow, 2000); // SLIDESHOW SPEED HERE
 }
-
 
 //start the function slideShow
 slideShow();
